@@ -23,3 +23,13 @@ a{
   display: inline-block;
   color: inherit;
 }
+body{
+  @extend %Cuprum-Regular;
+  font-size: 18px;
+  line-height: 20px;
+}
+.container{
+  max-width: 970px;
+  padding: 0 15px;
+  margin: 0 auto;
+}

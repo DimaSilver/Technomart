@@ -8,21 +8,26 @@
 </head>
 <body>
 <header class="header">
-    <div class="container">
-        <div class="header__top">
+    <div class="header__top">
+        <div class="container">
             <div class="header__top-inner">
-                <div class="logo">
-                    <img src="images/logo.png" alt="">
+                <a class="logo" href="#">
+                </a>
+                <form class="header__top-search">
+                    <input class="header__top-search__input" type="search" placeholder="Поиск:">
+                    <input class="header__top-search__input header__top-search__input--active" type="search" placeholder="Перфоратор">
+                    <button class="header__top-search__input-btn" type="submit"></button>
+                </form>
+                <div class="header__top-items">
+                    <a class="header__top-item" href="#">Закладки: <span>0</span></a>
+                    <a class="header__top-item" href="#">Корзина: <span>0</span></a>
                 </div>
-                <div class="header__top-search">
-                    <input class="header__top-search__input" type="text" placeholder="Поиск:">
-                </div>
-                <div class="header__top-item">Закладки: <span>0</span></div>
-                <div class="header__top-item">Корзина: <span>0</span></div>
                 <a class="header__top-link" href="#">Оформить заказ</a>
             </div>
         </div>
-        <div class="header__bottom">
+    </div>
+    <div class="header__bottom">
+        <div class="container">
             <div class="header__bottom-inner">
                 <p class="header__bottom-text">
                     Интернет-магазин
@@ -30,9 +35,9 @@
                     и инструментов для ремонта
                 </p>
                 <div class="header__bottom-info">
-                    <div class="header__bottom-info__phone">
+                    <a class="header__bottom-info__phone" href="tel:+78125550555">
                         +7 (812) 555-05-55
-                    </div>
+                    </a>
                     <p class="header__bottom-info__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 </div>
                 <div class="header__bottom-btns">
@@ -85,7 +90,8 @@
                 </div>
             </div>
             <div class="assortment-slider">
-                <a class="assortment-slider__item" href="#" style="background-image: url('images/assortment-slider__banner.jpg');">
+                <a class="assortment-slider__item" href="#"
+                   style="background-image: url('images/assortment-slider__banner.jpg');">
                     <a class="btn assortment-slider__item-btn" href="#">ОТКРЫТЬ КАТАЛОГ</a>
                 </a>
             </div>
@@ -124,8 +130,12 @@
             <div class="popular-items__bottom-inner">
                 <div class="popular-items__bottom-product__wrapper">
                     <div class="popular-items__bottom-product__hover">
-                        <button class="popular-items__bottom-product__button popular-items__bottom-product__buy">КУПИТЬ</button>
-                        <button class="popular-items__bottom-product__button popular-items__bottom-product__favorite">В закладки</button>
+                        <button class="popular-items__bottom-product__button popular-items__bottom-product__buy">
+                            КУПИТЬ
+                        </button>
+                        <button class="popular-items__bottom-product__button popular-items__bottom-product__favorite">В
+                            закладки
+                        </button>
                     </div>
                     <a class="popular-items__bottom-product" href="#">
                         <img class="popular-items__bottom-product__img" src="images/popular-items__1.jpg" alt="">
@@ -139,8 +149,12 @@
                 </div>
                 <div class="popular-items__bottom-product__wrapper">
                     <div class="popular-items__bottom-product__hover">
-                        <button class="popular-items__bottom-product__button popular-items__bottom-product__buy">КУПИТЬ</button>
-                        <button class="popular-items__bottom-product__button popular-items__bottom-product__favorite">В закладки</button>
+                        <button class="popular-items__bottom-product__button popular-items__bottom-product__buy">
+                            КУПИТЬ
+                        </button>
+                        <button class="popular-items__bottom-product__button popular-items__bottom-product__favorite">В
+                            закладки
+                        </button>
                     </div>
                     <a class="popular-items__bottom-product" href="#">
                         <img class="popular-items__bottom-product__img" src="images/popular-items__2.jpg" alt="">
@@ -154,8 +168,12 @@
                 </div>
                 <div class="popular-items__bottom-product__wrapper">
                     <div class="popular-items__bottom-product__hover">
-                        <button class="popular-items__bottom-product__button popular-items__bottom-product__buy">КУПИТЬ</button>
-                        <button class="popular-items__bottom-product__button popular-items__bottom-product__favorite">В закладки</button>
+                        <button class="popular-items__bottom-product__button popular-items__bottom-product__buy">
+                            КУПИТЬ
+                        </button>
+                        <button class="popular-items__bottom-product__button popular-items__bottom-product__favorite">В
+                            закладки
+                        </button>
                     </div>
                     <a class="popular-items__bottom-product" href="#">
                         <img class="popular-items__bottom-product__img" src="images/popular-items__3.jpg" alt="">
@@ -169,8 +187,12 @@
                 </div>
                 <div class="popular-items__bottom-product__wrapper popular-items__bottom-product__new">
                     <div class="popular-items__bottom-product__hover">
-                        <button class="popular-items__bottom-product__button popular-items__bottom-product__buy">КУПИТЬ</button>
-                        <button class="popular-items__bottom-product__button popular-items__bottom-product__favorite">В закладки</button>
+                        <button class="popular-items__bottom-product__button popular-items__bottom-product__buy">
+                            КУПИТЬ
+                        </button>
+                        <button class="popular-items__bottom-product__button popular-items__bottom-product__favorite">В
+                            закладки
+                        </button>
                     </div>
                     <a class="popular-items__bottom-product" href="#">
                         <img class="popular-items__bottom-product__img" src="images/popular-items__4.jpg" alt="">
@@ -264,7 +286,8 @@
         <div class="about__contacts-inner">
             <div class="about__contacts-left">
                 <h3 class="about__contacts-title">КОМПАНИЯ «Техномарт»</h3>
-                <p class="about__contacts-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+                <p class="about__contacts-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
+                    ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
                 <p class="about__contacts-text">Мы можем доставить ваш товар в самые отдаленные точки России!
                     Техномарт работает со многими транспортными компаниями: </p>
                 <div class="about__contacts-item">Деловые линии</div>
@@ -289,14 +312,19 @@
         <div class="navigation-block__top">
             <div class="navigation-block__top-inner">
                 <div class="logo">
-
+                    <img src="images/logo.jpg" alt="">
                 </div>
                 <ul class="navigation-block__top-list">
-                    <li class="navigation-block__top-list__item"><a class="navigation-block__top-list__link" href="#">Компания</a></li>
-                    <li class="navigation-block__top-list__item"><a class="navigation-block__top-list__link" href="#">Новости</a></li>
-                    <li class="navigation-block__top-list__item"><a class="navigation-block__top-list__link" href="#">Каталог</a></li>
-                    <li class="navigation-block__top-list__item"><a class="navigation-block__top-list__link" href="#">Доставка</a></li>
-                    <li class="navigation-block__top-list__item"><a class="navigation-block__top-list__link" href="#">Контакты</a></li>
+                    <li class="navigation-block__top-list__item"><a class="navigation-block__top-list__link" href="#">Компания</a>
+                    </li>
+                    <li class="navigation-block__top-list__item"><a class="navigation-block__top-list__link" href="#">Новости</a>
+                    </li>
+                    <li class="navigation-block__top-list__item"><a class="navigation-block__top-list__link" href="#">Каталог</a>
+                    </li>
+                    <li class="navigation-block__top-list__item"><a class="navigation-block__top-list__link" href="#">Доставка</a>
+                    </li>
+                    <li class="navigation-block__top-list__item"><a class="navigation-block__top-list__link" href="#">Контакты</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -308,10 +336,14 @@
                     <a class="navigation__bottom-textarea__item" href="tel:">+7 (812) 555-05-55</a>
                 </div>
                 <ul class="navigation__bottom-list">
-                    <li class="navigation__bottom-list__item"><a class="navigation__bottom-list__link" href="#">Материалы</a></li>
-                    <li class="navigation__bottom-list__item"><a class="navigation__bottom-list__link" href="#">Техника</a></li>
-                    <li class="navigation__bottom-list__item"><a class="navigation__bottom-list__link" href="#">Инструмент</a></li>
-                    <li class="navigation__bottom-list__item"><a class="navigation__bottom-list__link" href="#">Спецпредложения</a></li>
+                    <li class="navigation__bottom-list__item"><a class="navigation__bottom-list__link" href="#">Материалы</a>
+                    </li>
+                    <li class="navigation__bottom-list__item"><a class="navigation__bottom-list__link"
+                                                                 href="#">Техника</a></li>
+                    <li class="navigation__bottom-list__item"><a class="navigation__bottom-list__link" href="#">Инструмент</a>
+                    </li>
+                    <li class="navigation__bottom-list__item"><a class="navigation__bottom-list__link" href="#">Спецпредложения</a>
+                    </li>
                 </ul>
             </div>
         </div>
