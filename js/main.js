@@ -11,4 +11,16 @@ $(function(){
 	$('.menu__list').on("click", ".menu__list-item", function() {
 		$(this).addClass('menu__list-item--active').siblings().removeClass('menu__list-item--active');
 	});
+	$('.assortment-slider').slick({
+		prevArrow: '<button type="button" class="assortment-slider__arrows assortment-slider__prev"><img src="images/arrow-prev.svg" alt=""></button>',
+		nextArrow: '<button type="button" class="assortment-slider__arrows assortment-slider__next"><img src="images/arrow-next.svg" alt=""></button>',
+		dots: true,
+		dotsClass : 'assortment-slider__dots'
+	});
+    $('.assortment-item__descr').on("click", function(){
+        $(this).toggleClass('assortment-item__descr--active');
+    });
+    $('.btn').on("click", function(){
+        $(this).toggleClass('btn--active');
+    });
 });
