@@ -26,4 +26,7 @@ $(function(){
     $('.popular-items__bottom-product__hover').on("click", ".popular-items__bottom-product__button", function(){
         $(this).addClass('popular-items__bottom-product__button--active').siblings().removeClass('popular-items__bottom-product__button--active');
     });
+    $('.popular-brands__bottom-inner').on("click", ".popular-brands__bottom-item", function(){
+        $(this).addClass('popular-brands__bottom-item--active').siblings().removeClass('popular-brands__bottom-item--active');
+    });
 });
