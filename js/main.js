@@ -23,4 +23,7 @@ $(function(){
     $('.btn').on("click", function(){
         $(this).toggleClass('btn--active');
     });
+    $('.popular-items__bottom-product__hover').on("click", ".popular-items__bottom-product__button", function(){
+        $(this).addClass('popular-items__bottom-product__button--active').siblings().removeClass('popular-items__bottom-product__button--active');
+    });
 });

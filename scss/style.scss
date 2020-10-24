@@ -426,7 +426,194 @@
     }
   }
 }
-
+.popular-items{
+  @extend %PT-SansBold;
+  font-size: 18px;
+  line-height: 20px;
+  padding-bottom: 20px;
+  &__top{
+    background-color: #f9f5f0;
+    padding: 0 30px 0 24px;
+  }
+  &__top-inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__top-title{
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+  &__top-btn{
+    margin: 25px 0;
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+  &__bottom{
+    margin-top: 20px;
+  }
+  &__bottom-inner{
+    display: flex;
+  }
+  &__bottom-product__wrapper{
+    position: relative;
+    &:hover{
+      .popular-items__bottom-product .popular-items__bottom-product__img-link{
+        display: none;
+      }
+      .popular-items__bottom-product__hover{
+        transition: all ease-in-out .3s;
+        opacity: 1;
+      }
+    }
+    &.popular-items__bottom-product__new{
+      position: relative;
+      &::after{
+        content: "";
+        position: absolute;
+        background-image: url('../images/new__marker.png');
+        width: 60px;
+        height: 59px;
+        top: 0;
+        right: 0;
+      }
+      .popular-items__bottom-product .popular-items__bottom-product__info .popular-items__bottom-product__info-prices .popular-items__bottom-product__info-newprice{
+        margin-top: 55px;
+      }
+      .popular-items__bottom-product .popular-items__bottom-product__info .popular-items__bottom-product__info-prices .popular-items__bottom-product__info-oldprice{
+        display: none;
+      }
+    }
+    & + & {
+      margin-left: 20px;
+    }
+  }
+  &__bottom-product{
+    width: 220px;
+    height: 318px;
+    border: 1px solid #eaeaea;
+  }
+  &__bottom-product__info-title{
+    display: block;
+  }
+  &__bottom-product__hover{
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  &__bottom-product__button{
+    display: block;
+    max-width: 135px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+    transition: all .3s;
+    & + & {
+      margin-top: 7px;
+    }
+  }
+  &__bottom-product__buy{
+    background-color: #63a63e;
+    border: none;
+    border-bottom: 3px solid #367315;
+    color: #fff;
+    padding-left: 49px;
+    padding-right: 45px;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: "";
+      background-image: url('../images/cart-icon__popular-items.svg');
+      width: 15px;
+      height: 15px;
+      left: 12px;
+      top: 11px;
+    }
+    &:hover{
+      background-color: #5fbb2d;
+      &::before{
+        background-image: url('../images/cart-icon__popular-items-hover&click.svg');
+      }
+    }
+    &.popular-items__bottom-product__button--active{
+      border-bottom: 3px solid #518534;
+      background-color: #518534;
+    }
+  }
+  &__bottom-product__favorite{
+    background-color: transparent;
+    border: 3px solid #63a63e;
+    color: #32425c;
+    padding-left: 23px;
+    padding-right: 24px;
+    &:hover{
+      border: 3px solid #32425c;
+    }
+    &.popular-items__bottom-product__button--active{
+      border: 3px solid rgba(#32425c, .3);
+      color: rgba(#32425c, .3);
+    }
+  }
+  &__bottom-product__info{
+    max-width: 160px;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+  &__bottom-product__info-prices{
+    margin-top: -14px;
+  }
+  &__bottom-product__info-oldprice,
+  &__bottom-product__info-newprice{
+    font-size: 17px;
+    line-height: 19px;
+  }
+  &__bottom-product__info-oldprice{
+    margin-top: -13px;
+    color: #a9a9a9;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: "";
+      height: 1px;
+      background-color: #a9a9a9;
+      width: calc(100% + 6px);
+      top: 50%;
+    }
+  }
+  &__bottom-product__info-newprice{
+    color: #fff;
+    width: 122px;
+    background-color: #ee3643;
+    border-radius: 3px;
+    padding: 11px 0;
+    margin: 8px auto 0;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-bottom: 20px solid #ee3643;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      bottom: calc(10px + .5px);
+      transform: rotate(90deg);
+      right: -29px;
+    }
+  }
+}
 
 
 
