@@ -29,4 +29,11 @@ $(function(){
     $('.popular-brands__bottom-inner').on("click", ".popular-brands__bottom-item", function(){
         $(this).addClass('popular-brands__bottom-item--active').siblings().removeClass('popular-brands__bottom-item--active');
     });
+    $('.tabs__item').on('click', function (e) {
+        e.preventDefault();
+        $($(this).siblings()).removeClass('tabs__item--active');
+        $($(this).closest('.tabs__items').siblings().find('div')).removeClass('tabs__block--active');
+        $(this).addClass('tabs__item--active');
+        $($(this).attr('href')).addClass('tabs__block--active');
+    });
 });

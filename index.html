@@ -151,7 +151,8 @@
                         </button>
                     </div>
                     <div class="popular-items__bottom-product">
-                        <a class="popular-items__bottom-product__img-link" href="#"><img class="popular-items__bottom-product__img" src="images/popular-items__1.jpg" alt=""></a>
+                        <a class="popular-items__bottom-product__img-link" href="#"><img
+                                class="popular-items__bottom-product__img" src="images/popular-items__1.jpg" alt=""></a>
                         <a class="popular-items__bottom-product__info" href="#">
                             <h4 class="popular-items__bottom-product__info-title">Перфоратор BOSCH
                                 BFG 9000</h4>
@@ -172,7 +173,8 @@
                         </button>
                     </div>
                     <div class="popular-items__bottom-product">
-                        <a class="popular-items__bottom-product__img-link" href="#"><img class="popular-items__bottom-product__img" src="images/popular-items__2.jpg" alt=""></a>
+                        <a class="popular-items__bottom-product__img-link" href="#"><img
+                                class="popular-items__bottom-product__img" src="images/popular-items__2.jpg" alt=""></a>
                         <a class="popular-items__bottom-product__info" href="#">
                             <h4 class="popular-items__bottom-product__info-title">Перфоратор BOSCH
                                 BFG 3000</h4>
@@ -193,7 +195,8 @@
                         </button>
                     </div>
                     <div class="popular-items__bottom-product">
-                        <a class="popular-items__bottom-product__img-link" href="#"><img class="popular-items__bottom-product__img" src="images/popular-items__3.jpg" alt=""></a>
+                        <a class="popular-items__bottom-product__img-link" href="#"><img
+                                class="popular-items__bottom-product__img" src="images/popular-items__3.jpg" alt=""></a>
                         <a class="popular-items__bottom-product__info" href="#">
                             <h4 class="popular-items__bottom-product__info-title">Перфоратор BOSCH
                                 BFG 6000</h4>
@@ -214,7 +217,8 @@
                         </button>
                     </div>
                     <div class="popular-items__bottom-product">
-                        <a class="popular-items__bottom-product__img-link" href="#"><img class="popular-items__bottom-product__img" src="images/popular-items__4.jpg" alt=""></a>
+                        <a class="popular-items__bottom-product__img-link" href="#"><img
+                                class="popular-items__bottom-product__img" src="images/popular-items__4.jpg" alt=""></a>
                         <a class="popular-items__bottom-product__info" href="">
                             <h4 class="popular-items__bottom-product__info-title">Перфоратор BOSCH
                                 BFG 2000</h4>
@@ -270,32 +274,66 @@
 <section class="services">
     <div class="container">
         <div class="services-top">
-            <h3 class="services-top__title">
+            <h3 class="services-top__title title">
                 Сервисы
             </h3>
-            <p class="services-top__text">
+            <p class="services-top__text text">
                 Хороший интернет-магазин отличается от плохого не только ценами!
                 Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
             </p>
         </div>
         <div class="services-bottom">
-            <div class="services__tabs tabs__wrapper">
-                <a class="tab services__tab" href="#">Доставка</a>
-                <a class="tab services__tab" href="#">Гарантия</a>
-                <a class="tab services__tab" href="#">Кредит</a>
-            </div>
-            <div class="services__content">
-                <div id="tab-1" class="tabs-content services__content-item tabs-content--active">
-                    <div class="services__content-item__inner">
-                        <div class="services__content-item__textarea">
-                            <h3 class="services__content-item__title">Доставка</h3>
-                            <p class="services__content-item__text">
-                                Мы с удовольствием доставим ваш товар прямо
-                                к вашему подъезду совершенно бесплатно!
-                                Ведь мы неплохо заработаем,
-                                поднимая его на ваш этаж!</p>
+            <div class="tabs services__tabs">
+                <nav class="tabs__items services-tab__items">
+                    <div class="mobile-overflow">
+                        <a class="tabs__item services-tabs__item tabs__item--active" href="#tab-1">Доставка</a>
+                        <a class="tabs__item services-tabs__item" href="#tab-2">Гарантия</a>
+                        <a class="tabs__item services-tabs__item" href="#tab-3">Кредит</a>
+                    </div>
+                </nav>
+                <div class="tabs__body services-tabs__body">
+                    <div class="tabs__block services-tabs__block tabs__block--active" id="tab-1">
+                        <div class="services-tabs__block-inner">
+                            <div class="services-tabs__block-textarea">
+                                <h3 class="services-tabs__block-title title">Доставка</h3>
+                                <p class="services-tabs__block-text text">Мы с удовольствием доставим ваш товар прямо
+                                    к вашему подъезду совершенно бесплатно!
+                                    Ведь мы неплохо заработаем,
+                                    поднимая его на ваш этаж!</p>
+                            </div>
+                            <div class="services-tabs__block-image">
+                                <img src="images/delivery-img.png" alt="">
+                            </div>
                         </div>
-                        <img class="services__content-item__img" src="images/delivery-img.png" alt="">
+                    </div>
+                    <div class="tabs__block services-tabs__block" id="tab-2">
+                        <div class="services-tabs__block-inner">
+                            <div class="services-tabs__block-textarea">
+                                <h3 class="services-tabs__block-title title">Гарантия</h3>
+                                <p class="services-tabs__block-text text">Если купленный у нас товар поломается или
+                                    заискрит,
+                                    а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть
+                                    уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+                                    <br>
+                                    Дом уж восстановите как-нибудь сами.</p>
+                            </div>
+                            <div class="services-tabs__block-image">
+                                <img src="images/delivery-img2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__block services-tabs__block" id="tab-3">
+                        <div class="services-tabs__block-inner">
+                            <div class="services-tabs__block-textarea">
+                                <h3 class="services-tabs__block-title title">Кредит</h3>
+                                <p class="services-tabs__block-text text">Залезть в долговую яму стало проще!
+                                    Кредитные консультанты придут вам на помощь.</p>
+                                <a class="services-tabs__block-link btn" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+                            </div>
+                            <div class="services-tabs__block-image">
+                                <img src="images/delivery-img3.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

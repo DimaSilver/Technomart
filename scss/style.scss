@@ -666,6 +666,138 @@
     }
   }
 }
+.services{
+  background-color: #f4f8fa;
+  padding: 60px 0 0;
+  &-top{
+    max-width: 400px;
+  }
+  &-bottom{
+    display: flex;
+    margin-top: 70px;
+  }
+  &-tab__items{
+    position: relative;
+    &::after{
+      position: absolute;
+      content: "";
+      background-image: url('../images/shadow-tabs.png');
+      width: 10px;
+      height: 272px;
+      right: 0;
+      top: -50px;
+    }
+  }
+  &__content-item__link{
+    margin-top: 25px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  &__content{
+    margin-left: 80px;
+    position: relative;
+  }
+  &__content-item__inner{
+    display: flex;
+    justify-content: space-around;
+  }
+  .services__content-item__textarea{
+    position: absolute;
+    left: 0;
+  }
+  &-content__image-wrapper{
+    margin-left: 150px;
+  }
+  &__content-item{
+    &:first-child,
+    &:nth-child(3){
+      .services__content-item__inner{
+        .services__content-item__textarea{
+          width: 280px;
+        }
+      }
+    }
+    &:nth-child(2){
+      .services__content-item__inner{
+        .services__content-item__textarea{
+          width: 380px;
+        }
+      }
+    }
+  }
+  &__tabs{
+    display: flex;
+  }
+  &-tabs__block{
+    display: none;
+    margin-left: 80px;
+    max-width: 115%;
+    width: 150%;
+    &.tabs__block--active{
+      display: block;
+    }
+    &:first-child{
+      .services-tabs__block-inner{
+        .services-tabs__block-textarea{
+          max-width: 275px;
+        }
+        .services-tabs__block-image{
+          margin-top: -123px;
+        }
+      }
+    }
+    &:nth-child(2){
+      .services-tabs__block-inner{
+        .services-tabs__block-textarea{
+          max-width: 350px;
+        }
+      }
+    }
+    &:nth-child(3){
+      .services-tabs__block-inner{
+        .services-tabs__block-textarea{
+          max-width: 280px;
+        }
+        .services-tabs__block-image{
+          margin-top: -177px;
+        }
+      }
+    }
+  }
+  &-tabs__item{
+    width: 240px;
+    cursor: pointer;
+    padding: 16px 23px 17px;
+    background-color: #32425c;
+    box-shadow: 0 1px #293449, inset 0 1px #405069;
+    font-size: 21px;
+    line-height: 23px;
+    color: #fff;
+    outline: none;
+    display: block;
+    @extend %Cuprum-Bold;
+    &.tabs__item--active{
+      transition: all ease-in-out .3s;
+      background-color: #fff;
+      color: #32425c;
+      box-shadow: 0 1px #fff, inset 0 1px #fff;
+    }
+  }
+  &-tabs__block-title{
+    margin-top: 0;
+  }
+  &-tabs__block-image{
+    float: right;
+    margin-top: -160px;
+  }
+  &-tabs__block-link{
+    margin-top: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+
 
 
 @import "media";
