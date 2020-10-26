@@ -62,3 +62,50 @@ body{
   text-transform: uppercase;
   font-weight: 400;
 }
+.mfp-bg{
+  background: transparent;
+}
+.mfp-map {
+  .mfp-iframe-holder {
+    left: -10px;
+    .mfp-close {
+      top: 9px;
+      color: #ee3643;
+      right: 9px;
+      text-align: right;
+      padding-right: 0;
+      width: 21px;
+      line-height: 0;
+      font-size: 0;
+      height: 21px;
+      background-repeat: no-repeat;
+      opacity: 1;
+      background-image: url('../images/map__close.svg');
+    }
+    .mfp-content {
+      max-width: 940px;
+      max-height: 446px;
+
+      .mfp-iframe-scaler{
+        .mfp-iframe{
+          box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
+        }
+      }
+    }
+  }
+}
+.mfp-map.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+.mfp-map.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.mfp-map.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+.mfp-map.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}

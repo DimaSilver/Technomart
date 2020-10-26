@@ -36,4 +36,13 @@ $(function(){
         $(this).addClass('tabs__item--active');
         $($(this).attr('href')).addClass('tabs__block--active');
     });
+    $('.about__contacts-map').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-map',
+        removalDelay: 160,
+        preloader: false,
+
+        fixedContentPos: true
+    });
 });

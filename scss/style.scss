@@ -3,6 +3,7 @@
 @import "fonts";
 @import "global";
 
+/*start header*/
 .header{
   &__top{
     background-color: #293449;
@@ -265,6 +266,9 @@
     border-bottom: 5px solid #293449;
   }
 }
+/*end header*/
+
+/*start assortment*/
 .assortment{
   color: #fff;
   padding: 59px 0 53px;
@@ -622,6 +626,9 @@
     }
   }
 }
+/*end assortment*/
+
+/*start popular-brands*/
 .popular-brands{
   padding-bottom: 65px;
   &__top-btn{
@@ -666,6 +673,9 @@
     }
   }
 }
+/*end popular-brands*/
+
+/*start services*/
 .services{
   background-color: #f4f8fa;
   padding: 60px 0 0;
@@ -776,6 +786,10 @@
     outline: none;
     display: block;
     @extend %Cuprum-Bold;
+    transition: all .3s;
+    &:hover{
+      background-color: #293449;
+    }
     &.tabs__item--active{
       transition: all ease-in-out .3s;
       background-color: #fff;
@@ -796,7 +810,61 @@
     padding-right: 45px;
   }
 }
+/*end services*/
 
+/*start about__contacts*/
+.about__contacts{
+  padding: 60px 0 85px;
+  &-inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &-left{
+    max-width: 525px;
+    .about__contacts-btn{
+      margin-top: 35px;
+      padding-left: 41px;
+      padding-right: 40px;
+    }
+  }
+  &-right{
+    max-width: 300px;
+    .about__contacts-btn{
+      margin-top: 40px;
+      padding-left: 62px;
+      padding-right: 61px;
+    }
+  }
+  &-left__text{
+    & + & {
+      margin-top: 30px;
+    }
+  }
+  &-right__text{
+    max-width: 180px;
+    margin-bottom: 35px;
+  }
+  &-left__item{
+    font-size: 18px;
+    line-height: 20px;
+    padding-left: 36px;
+    margin-top: 27px;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: "";
+      width: 25px;
+      height: 2px;
+      background-color: #ee3643;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &-map{
+    outline: none;
+  }
+}
 
 
 
