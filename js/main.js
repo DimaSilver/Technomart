@@ -51,4 +51,10 @@ $(function(){
     $('.navigation-block__bottom-list').on("click", ".navigation-block__bottom-list__item", function(){
         $(this).addClass('navigation-block__bottom-list__item--active').siblings().removeClass('navigation-block__bottom-list__item--active');
     });
+    $('.footer__socials').on("click", ".footer__socials-item", function(){
+        $(this).addClass('footer__socials-item--active').siblings().removeClass('footer__socials-item--active');
+    });
+    $('.footer__feedback').on("click", ".footer__feedback-item", function(){
+       $(this).addClass('footer__feedback-item--active').siblings().removeClass('footer__feedback-item--active');
+    });
 });
