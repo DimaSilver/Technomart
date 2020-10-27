@@ -45,4 +45,10 @@ $(function(){
 
         fixedContentPos: true
     });
+    $('.navigation-block__top-list').on("click", ".navigation-block__top-list__item", function(){
+        $(this).addClass('navigation-block__top-list__item--active').siblings().removeClass('navigation-block__top-list__item--active');
+    });
+    $('.navigation-block__bottom-list').on("click", ".navigation-block__bottom-list__item", function(){
+        $(this).addClass('navigation-block__bottom-list__item--active').siblings().removeClass('navigation-block__bottom-list__item--active');
+    });
 });
