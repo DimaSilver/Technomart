@@ -72,16 +72,4 @@ $(function(){
     $('.footer__feedback').on("click", ".footer__feedback-item", function(){
        $(this).addClass('footer__feedback-item--active').siblings().removeClass('footer__feedback-item--active');
     });
-    $('.about__contacts-btn').magnificPopup({
-        type:'inline',
-        midClick: true
-    });
-
-    $('button').magnificPopup({
-        items: {
-            src: '#writeus-form',
-            type: 'inline'
-        }
-    });
-
 });
