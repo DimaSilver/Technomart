@@ -344,7 +344,8 @@
         <div class="about__contacts-inner">
             <div class="about__contacts-left">
                 <h3 class="about__contacts-left__title title">КОМПАНИЯ «Техномарт»</h3>
-                <p class="about__contacts-left__text text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
+                <p class="about__contacts-left__text text">Настоящий мужской шоппинг начинается здесь! Огромный выбор
+                    товаров для
                     ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
                 <p class="about__contacts-left__text text">Мы можем доставить ваш товар в самые отдаленные точки России!
                     <br>
@@ -358,21 +359,40 @@
                 <h3 class="about__contacts-right__title title">КОНТАКТЫ</h3>
                 <p class="about__contacts-right__text text">Вы можете забрать товар сами,
                     заехав в наш офис:</p>
-                <a class="about__contacts-map" href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2482.4248513434086!2d-0.1607444!3d51.523767!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1603690920971!5m2!1sru!2sua">
+                <a class="about__contacts-map"
+                   href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2482.4248513434086!2d-0.1607444!3d51.523767!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1603690920971!5m2!1sru!2sua">
                     <img class="about__contacts-map__image" src="images/about__contacts-map.jpg" alt="">
                 </a>
-                <a class="btn about__contacts-btn" href="#">Заблудились? НапиШИТЕ НАМ!</a>
+                <a class="btn about__contacts-btn" href="#writeus-form">Заблудились? НапиШИТЕ НАМ!</a>
             </div>
         </div>
     </div>
 </section>
+<form id="writeus-form" class="mfp-hide white-popup-block writeus-form">
+    <div class="writeus-form__top">
+        <div class="writeus-form__inputs">
+            <label class="writeus-form__label">Ваше имя:
+                <input class="writeus-form__input" type="text" placeholder="Имя Фамилия">
+            </label>
+            <label class="writeus-form__label">Ваш e-mail:
+                <input class="writeus-form__input" type="text" placeholder="email@example.com">
+            </label>
+        </div>
+        <label class="writeus-form__label">Текст письма:
+            <textarea class="writeus-form__textarea" placeholder="В свободной форме"></textarea>
+        </label>
+    </div>
+    <div class="writeus-form__bottom">
+        <button class="btn writeus-form__btn" type="submit">ОТПРАВИТЬ</button>
+    </div>
+</form>
 <section class="navigation-block">
     <div class="container">
         <div class="navigation-block__top">
             <div class="navigation-block__top-inner">
-                <div class="footer__logo">
+                <a class="navigation-block__logo" href="#">
                     <img src="images/footer__logo.jpg" alt="">
-                </div>
+                </a>
                 <ul class="navigation-block__top-list">
                     <li class="navigation-block__top-list__item"><a class="navigation-block__top-list__link" href="#">Компания</a>
                     </li>
@@ -390,16 +410,21 @@
         <div class="navigation-block__bottom">
             <div class="navigation-block__bottom-inner">
                 <div class="navigation-block__bottom-textarea">
-                    <p class="navigation-block__bottom-textarea__item">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<a class="navigation-block__bottom-textarea__item" href="tel:+78125550555">+7 (812) 555-05-55</a></p>
+                    <p class="navigation-block__bottom-textarea__item">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<a
+                            class="navigation-block__bottom-textarea__item" href="tel:+78125550555">+7 (812)
+                        555-05-55</a></p>
                 </div>
                 <ul class="navigation-block__bottom-list">
-                    <li class="navigation-block__bottom-list__item"><a class="navigation-block__bottom-list__link" href="#">Материалы</a>
+                    <li class="navigation-block__bottom-list__item"><a class="navigation-block__bottom-list__link"
+                                                                       href="#">Материалы</a>
                     </li>
                     <li class="navigation-block__bottom-list__item"><a class="navigation-block__bottom-list__link"
-                                                                 href="#">Техника</a></li>
-                    <li class="navigation-block__bottom-list__item"><a class="navigation-block__bottom-list__link" href="#">Инструмент</a>
+                                                                       href="#">Техника</a></li>
+                    <li class="navigation-block__bottom-list__item"><a class="navigation-block__bottom-list__link"
+                                                                       href="#">Инструмент</a>
                     </li>
-                    <li class="navigation-block__bottom-list__item"><a class="navigation-block__bottom-list__link" href="#">Спецпредложения</a>
+                    <li class="navigation-block__bottom-list__item"><a class="navigation-block__bottom-list__link"
+                                                                       href="#">Спецпредложения</a>
                     </li>
                 </ul>
             </div>
@@ -414,10 +439,13 @@
                 Все права защищены
             </p>
             <ul class="footer__socials">
-                <li class="footer__socials-item"><a class="footer__socials-link vk" href="#"><img src="images/vk-icon.svg" alt=""></a></li>
-                <li class="footer__socials-item"><a class="footer__socials-link facebook" href="#"><img src="images/facebook-icon.svg" alt=""></a></li>
-                <li class="footer__socials-item"><a class="footer__socials-link instagram" href="#"><img src="images/instagram-icon.svg"
-                                                                                                         alt=""></a></li>
+                <li class="footer__socials-item"><a class="footer__socials-link" href="#"><img src="images/vk-icon.svg"
+                                                                                               alt=""></a></li>
+                <li class="footer__socials-item"><a class="footer__socials-link" href="#"><img
+                        src="images/facebook-icon.svg" alt=""></a></li>
+                <li class="footer__socials-item"><a class="footer__socials-link" href="#"><img
+                        src="images/instagram-icon.svg"
+                        alt=""></a></li>
             </ul>
             <div class="footer__feedback">
                 <div class="footer__feedback-item">

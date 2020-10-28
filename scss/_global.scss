@@ -94,6 +94,22 @@ body{
     }
   }
 }
+.writeus-form{
+  .mfp-close{
+    top: 15px;
+    color: #ee3643;
+    right: 9px;
+    text-align: right;
+    padding-right: 0;
+    width: 21px;
+    line-height: 0;
+    font-size: 0;
+    height: 21px;
+    background-repeat: no-repeat;
+    opacity: 1;
+    background-image: url('../images/map__close.svg');
+  }
+}
 .mfp-map.mfp-bg.mfp-removing {
   opacity: 0;
 }
