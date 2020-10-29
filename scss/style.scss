@@ -1071,7 +1071,31 @@
     cursor: pointer;
   }
 }
-
+.breadcrumbs{
+  padding: 21px 0;
+  &__list-item{
+    display: inline-block;
+    text-transform: uppercase;
+    @extend %PT-SansRegular;
+    font-size: 13px;
+    line-height: 15px;
+    & + & {
+      margin-left: 15px;
+      padding-left: 25px;
+      position: relative;
+      &::before{
+        position: absolute;
+        content: "";
+        background-image: url('../images/icon-right-small.svg');
+        width: 8px;
+        height: 12px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
 
 
 
