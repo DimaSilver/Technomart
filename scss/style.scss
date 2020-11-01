@@ -1551,7 +1551,6 @@
   background-position: center center;
   background-image: url('../images/checkbox-on__box-disable.svg');
 }
-/*end catalog*/
 
 /*start pagination*/
 .pagination{
@@ -1598,6 +1597,8 @@
   }
 }
 /*end pagination*/
+
+/*start product__buy*/
 .product__buy{
   max-width: 620px;
   width: 100%;
@@ -1655,6 +1656,18 @@
     }
   }
 }
+/*end product__buy*/
+/*end catalog*/
+
+/*start several-words*/
+.several-words{
+  background-color: #f2f6f8;
+  padding: 40px 0 55px;
+}
+/*end several-words*/
+
+
+
 
 
 @import "media";
