@@ -59,6 +59,20 @@ $(function(){
                 }
             }
         });
+        $('.popular-items__bottom-product__buy').magnificPopup({
+            type: 'inline',
+            preloader: false,
+            focus: '#product__buy',
+            callbacks: {
+                beforeOpen: function() {
+                    if($(window).width() < 700) {
+                        this.st.focus = false;
+                    } else {
+                        this.st.focus = '#product__buy';
+                    }
+                }
+            }
+        });
     });
     $('.navigation-block__top-list').on("click", ".navigation-block__top-list__item", function(){
         $(this).addClass('navigation-block__top-list__item--active').siblings().removeClass('navigation-block__top-list__item--active');
@@ -72,4 +86,22 @@ $(function(){
     $('.footer__feedback').on("click", ".footer__feedback-item", function(){
        $(this).addClass('footer__feedback-item--active').siblings().removeClass('footer__feedback-item--active');
     });
+    $(".catalog__filter-range__input").ionRangeSlider();
+    $('.catalog__filter-checkbox, .catalog__filter-radio').styler();
+    $('.catalog-body__sort-items').on("click", ".catalog-body__sort-item", function(){
+        $(this).addClass('catalog-body__sort-item--active').siblings().removeClass('catalog-body__sort-item--active');
+    });
+    $('.catalog-body__sort-item__arrows').on("click", ".catalog-body__sort-item__arrow", function(){
+        $(this).addClass('catalog-body__sort-item__arrow--active').siblings().removeClass('catalog-body__sort-item__arrow--active');
+    });
+    $('.header__bottom-account__label-exit').on("click", function(){
+        $('.header__bottom-account__label').toggleClass('header__bottom-account__label--active');
+    });
+    $('.header__bottom-account__link').on("click", function(){
+        $(this).toggleClass('header__bottom-account__link--active');
+    });
+    $('.pagination__list').on("click", ".pagination__list-item", function(){
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+
 });
