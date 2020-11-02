@@ -103,5 +103,7 @@ $(function(){
     $('.pagination__list').on("click", ".pagination__list-item", function(){
         $(this).addClass('active').siblings().removeClass('active');
     });
-
+    $('.menu__btn').on('click', function(){
+        $('.menu__list-mobile').slideToggle();
+    });
 });

@@ -7,7 +7,7 @@
 .header{
   &__top{
     background-color: #293449;
-    height: 42px;
+    min-height: 42px;
     font-size: 17px;
     line-height: 19px;
     color: #fff;
@@ -369,10 +369,16 @@
       margin-left: calc(-1px + .3px);
     }
   }
+  &__btn{
+    display: none;
+  }
   &__list-link{
     padding: 17px 34px 18px;
     border-bottom: 5px solid #293449;
     outline: gainsboro;
+  }
+  &__list.menu__list-mobile{
+    display: none;
   }
 }
 /*end header*/
