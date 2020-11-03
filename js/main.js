@@ -3,7 +3,7 @@ $(function(){
 	    $(this).toggleClass('header__top-inner--active');
     });
 	$('.header__top-search').on("click", function(){
-		$(this).toggleClass('header__top-search--active');
+		$(this).addClass('header__top-search--active');
 	});
 	$('.header__bottom-btns').on("click", ".header__bottom-btn", function(){
 		$(this).addClass('header__bottom-btn--active').siblings().removeClass('header__bottom-btn--active');

@@ -69,6 +69,7 @@
       background-color: #fff;
       .header__top-search__input{
         display: none;
+        outline: none;
       }
       .header__top-search__input.header__top-search__input--active{
         display: block;
@@ -79,6 +80,11 @@
       }
       .header__top-search__input-btn{
         background-image: url('../images/search-icon__click.svg');
+      }
+      &:hover{
+        .header__top-search__input-btn{
+          background-image: url('../images/search-icon__click.svg');
+        }
       }
     }
   }
