@@ -125,6 +125,11 @@
     margin-bottom: 20px;
   }
 }
+@media(max-width: 910px){
+  .popular-items__bottom-product__wrapper{
+    margin-bottom: 20px;
+  }
+}
 @media(max-width: 840px){
   .header__bottom {
     padding: 20px 0 35px;
@@ -147,6 +152,15 @@
   .header__top {
     font-size: 15px;
     line-height: 17px;
+  }
+}
+@media(max-width: 800px){
+  .popular__top-title {
+    font-size: 25px;
+    line-height: 25px
+  }
+  .popular__top-inner {
+    align-items: center;
   }
 }
 @media(max-width: 760px){
@@ -199,6 +213,25 @@
       background-color: transparent;
       color: rgba(255,255,255,0.6);
     }
+  }
+}
+@media(max-width: 700px){
+  .popular-items {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .popular-items__bottom-product__info-oldprice,
+  .popular-items__bottom-product__info-newprice {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .popular-items__bottom-product__button {
+    display: block;
+    max-width: 135px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 @media(max-width: 670px){
@@ -309,6 +342,12 @@
     background-position: center left -15px;
   }
 }
+@media(max-width: 650px){
+  .popular__top-btn {
+    padding-left: 36px;
+    padding-right: 35px;
+  }
+}
 @media(max-width: 600px){
   .header__bottom-text{
     text-align: center;
@@ -337,6 +376,15 @@
     padding-right: 26px;
   }
 }
+@media(max-width: 540px){
+  .popular__top-title {
+    font-size: 23px;
+    line-height: 23px;
+  }
+  .popular__top-btn {
+    margin: 15px 0;
+  }
+}
 @media(max-width: 520px){
   .assortment {
     padding: 30px 0;
@@ -351,6 +399,17 @@
   .assortment-item__descr {
     font-size: 12px;
     line-height: 16px;
+  }
+  .popular__top-inner{
+    flex-direction: column;
+  }
+  .popular__top-btn {
+    margin: -5px 0 15px;
+  }
+}
+@media(max-width: 470px){
+  .popular-items__bottom-inner{
+    justify-content: center;
   }
 }
 @media(max-width: 460px){
@@ -408,5 +467,22 @@
 @media(max-width: 370px){
   .menu__list-item.menu__list-item__btn .header__bottom-btn + .header__bottom-btn {
     margin-left: 15px;
+  }
+  .popular__top-title {
+    font-size: 21px;
+    line-height: 23px;
+  }
+  .btn {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .popular-items {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .popular-items__bottom-product__info-oldprice,
+  .popular-items__bottom-product__info-newprice {
+    font-size: 13px;
+    line-height: 15px;
   }
 }

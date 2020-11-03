@@ -583,6 +583,8 @@
   }
   &__bottom-inner{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   &__bottom-product__wrapper{
     position: relative;
@@ -615,9 +617,6 @@
       .popular-items__bottom-product .popular-items__bottom-product__info .popular-items__bottom-product__info-prices .popular-items__bottom-product__info-oldprice{
         display: none;
       }
-    }
-    & + & {
-      margin-left: 20px;
     }
   }
   &__bottom-product{
