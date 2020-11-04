@@ -761,6 +761,7 @@
   &__bottom-inner{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   &__bottom-item{
     width: 220px;
@@ -784,9 +785,6 @@
         height: 100%;
         background-color: rgba(#fff, .6);
       }
-    }
-    & + & {
-      margin-left: 20px;
     }
     &:nth-child(5){
       margin-left: 0;

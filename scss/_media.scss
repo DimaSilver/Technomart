@@ -348,6 +348,21 @@
     padding-right: 35px;
   }
 }
+@media(max-width: 630px){
+  .product__buy-bottom__link {
+    font-size: 12px;
+    line-height: 14px;
+    &:first-child {
+      padding: 11px 51px 11px 50px;
+    }
+    &:last-child {
+      padding: 11px 36px 11px 35px;
+    }
+  }
+  .product__buy-bottom{
+    justify-content: center;
+  }
+}
 @media(max-width: 600px){
   .header__bottom-text{
     text-align: center;
@@ -375,6 +390,24 @@
     padding-left: 26px;
     padding-right: 26px;
   }
+  .popular-brands__top-inner{
+    flex-direction: column;
+  }
+  .popular-brands__top-btn{
+    margin: 15px 0;
+  }
+}
+@media(max-width: 590px){
+  .product__buy-top__title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .product__buy-top{
+    padding: 30px 60px;
+  }
+  .product__buy-bottom{
+    padding: 25px 60px;
+  }
 }
 @media(max-width: 540px){
   .popular__top-title {
@@ -383,6 +416,13 @@
   }
   .popular__top-btn {
     margin: 15px 0;
+  }
+  .product__buy-top__title {
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .product__buy-top{
+    justify-content: space-around;
   }
 }
 @media(max-width: 520px){
@@ -407,8 +447,17 @@
     margin: -5px 0 15px;
   }
 }
+@media(max-width: 500px){
+  .product__buy-top-img__wrapper {
+    margin-right: 0;
+  }
+  .product__buy-top{
+    flex-direction: column;
+  }
+}
 @media(max-width: 470px){
-  .popular-items__bottom-inner{
+  .popular-items__bottom-inner,
+  .popular-brands__bottom-inner{
     justify-content: center;
   }
 }
@@ -427,6 +476,21 @@
 @media(max-width: 450px){
   .header__bottom {
     padding: 5px 0;
+  }
+}
+@media(max-width: 420px){
+  .product__buy-bottom{
+    display: block;
+  }
+  .product__buy-bottom__link:first-child {
+    padding: 11px 32px 11px 31px;
+  }
+  .product__buy-bottom__link:last-child {
+    padding: 11px 20px 11px 19px;
+  }
+  .product__buy-bottom__link + .product__buy-bottom__link{
+    margin-left: 0;
+    margin-top: 10px;
   }
 }
 @media(max-width: 400px){
@@ -469,8 +533,8 @@
     margin-left: 15px;
   }
   .popular__top-title {
-    font-size: 21px;
-    line-height: 23px;
+    font-size: 19px;
+    line-height: 22px;
   }
   .btn {
     font-size: 12px;
@@ -484,5 +548,11 @@
   .popular-items__bottom-product__info-newprice {
     font-size: 13px;
     line-height: 15px;
+  }
+}
+@media(max-width: 350px){
+  .product__buy-top__title {
+    font-size: 24px;
+    line-height: 26px;
   }
 }
