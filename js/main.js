@@ -38,7 +38,7 @@ $(function(){
     });
     $(document).ready(function() {
         $('.about__contacts-map').magnificPopup({
-            disableOn: 700,
+            disableOn: 319,
             type: 'iframe',
             mainClass: 'mfp-map',
             removalDelay: 160,
