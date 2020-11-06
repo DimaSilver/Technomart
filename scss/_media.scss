@@ -338,6 +338,13 @@
     font-size: 16px;
     line-height: 18px;
   }
+  .footer {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .footer__copy {
+    max-width: 220px;
+  }
 }
 @media(max-width: 700px){
   .popular-items {
@@ -400,6 +407,24 @@
   }
   .navigation-block__bottom {
     margin-top: 20px;
+  }
+  .footer__inner{
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__feedback{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer__feedback-item + .footer__feedback-item {
+    margin-left: 0;
+  }
+  .footer{
+    padding: 15px 0;
+  }
+  .footer__copy {
+    order: 1;
   }
 }
 @media(max-width: 670px){
@@ -687,6 +712,9 @@
   .about__contacts-left__item {
     font-size: 16px;
     line-height: 18px;
+  }
+  .footer{
+    padding: 10px 0;
   }
 }
 @media(max-width: 490px){
