@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<header class="header">
+<header class="header header__catalog">
     <div class="header__top">
         <div class="container">
             <div class="header__top-inner">
@@ -56,6 +56,11 @@
                 </div>
             </div>
             <nav class="menu">
+                <div class="menu__btn">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
                 <ul class="menu__list">
                     <li class="menu__list-item"><a class="menu__list-link" href="#">Главная</a></li>
                     <li class="menu__list-item"><a class="menu__list-link" href="#">Компания</a></li>
@@ -65,11 +70,41 @@
                     <li class="menu__list-item"><a class="menu__list-link" href="#">Доставка</a></li>
                     <li class="menu__list-item"><a class="menu__list-link" href="#">Контакты</a></li>
                 </ul>
+                <ul class="menu__list menu__list-mobile">
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Главная</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Компания</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Каталог</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Новости</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Спецпредложения</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Доставка</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Контакты</a></li>
+                    <li class="menu__list-item menu__list-item__btn menu__list-item__account"><div class="header__bottom-account__label">Равшан Джамшутович
+                        <button class="header__bottom-account__label-exit" type="submit"><img
+                                src="images/logout-icon.svg" alt=""></button>
+                    </div></li>
+                    <li class="menu__list-item menu__list-item__btn menu__list-item__header">
+                        <div class="header__bottom-account__links">
+                            <div class="header__bottom-account__link-wrapper">
+                                <a class="header__bottom-account__link" href="#">Мои заказы</a>
+                            </div>
+                            <div class="header__bottom-account__link-wrapper">
+                                <a class="header__bottom-account__link" href="#">Личный кабинет</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__list-item menu__list-item__btn menu__list-item__header menu__list-item__order">
+                        <div class="header__top-items">
+                            <a class="header__top-item" href="#">Закладки: <span>0</span></a>
+                            <a class="header__top-item" href="#">Корзина: <span>0</span></a>
+                        </div>
+                        <a class="header__top-link" href="#">Оформить заказ</a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </div>
 </header>
-<div class="breadcrumbs">
+<!--<div class="breadcrumbs">
     <div class="container">
         <ul class="breadcrumbs__list">
             <li class="breadcrumbs__list-item"><a href="#"><img src="images/icon-home.svg" alt=""></a></li>
@@ -481,7 +516,7 @@
             </div>
         </div>
     </div>
-</footer>
+</footer>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/libs.min.js"></script>
 <script src="js/main.js"></script>
