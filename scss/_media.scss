@@ -150,6 +150,9 @@
     bottom: -80px;
     margin-top: 0;
   }
+  .catalog {
+    padding-bottom: 110px;
+  }
 }
 @media(max-width: 910px){
   .popular-items__bottom-product__wrapper{
@@ -317,6 +320,9 @@
   }
   .navigation-block__bottom-textarea {
     max-width: 280px;
+  }
+  .several-words {
+    padding: 20px 0 35px;
   }
 }
 @media(max-width: 780px){
@@ -1106,6 +1112,9 @@
   .catalog-body__sort-items{
     max-width: 100%;
   }
+  .several-words {
+    padding: 10px 0 25px;
+  }
 }
 @media(max-width: 380px){
   .services-tabs__item{
@@ -1145,11 +1154,17 @@
     margin-left: 8px;
     padding-left: 15px;
   }
-  .catalog__title{
+  .title{
     text-align: center;
   }
   .catalog__filter-range .irs--flat .irs-line {
     max-width: 290px;
+  }
+  .several-words {
+    padding: 10px 0 20px;
+  }
+  .catalog {
+    padding-bottom: 90px;
   }
 }
 @media(max-width: 360px){
