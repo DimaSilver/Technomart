@@ -106,4 +106,7 @@ $(function(){
     $('.menu__btn').on('click', function(){
         $('.menu__list-mobile').slideToggle();
     });
+    $('.catalog__filter-mobile__btn').on('click', function(){
+       $('.catalog__filter').toggleClass('catalog__filter--active');
+    });
 });
