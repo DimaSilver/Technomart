@@ -1,3 +1,14 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .popular-brands__bottom-item.popular-brands__bottom-item--active::before {
+    margin: -71px -48px;
+  }
+  .product__buy-top::before {
+    left: 0px;
+  }
+  .catalog-body__inner {
+    display: block;
+  }
+}
 @media(max-width: 1040px){
   .menu__list-link {
     padding: 17px 30px 18px;
@@ -810,6 +821,9 @@
   }
 }
 @media(max-width: 590px){
+  .product__buy{
+    min-height: 232px;
+  }
   .product__buy-top__title {
     font-size: 28px;
     line-height: 30px;
